@@ -1,0 +1,40 @@
+.wrapper {
+  .tabs {
+    display: flex;
+    gap: 10px;
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid var(--accent);
+      transition: all .2s ease;
+      color: var(--accent);
+
+      // &:last-child {
+      //   border-radius: 0 5px 5px 0;
+      // }
+
+      // &:first-child {
+      //   border-radius: 5px 0 0 5px;
+      // }
+
+      &:active {
+        transform: scale(.9);
+      }
+
+      &:hover {
+        background-color: rgba(76, 76, 124, .1);
+      }
+    }
+
+    .tab.active {
+      background-color: var(--accent);
+      color: #fff;
+    }
+    body {
+
+    }
+  }
+}

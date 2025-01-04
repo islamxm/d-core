@@ -1,0 +1,21 @@
+:root {
+    --main_bg: #F0F8FF;
+    --text_primary: #1f1f1f;
+
+    --accent: #4c4c7c;
+    --danger: #e74747;
+    --info: #dfab3c;
+    --success: #4bb64b;
+
+    --border_radius: 25px;
+    --def_click_transition: all .2s ease;
+    --chakra-zIndices-modal: 1030 !important;
+}
+
+@mixin untouchable {
+    touch-action: none !important;
+    pointer-events: none !important;
+}
+
+
+

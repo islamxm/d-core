@@ -1,0 +1,14 @@
+.wrapper {
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  // position: relative;
+  
+  .table {
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+    }
+  }
+}

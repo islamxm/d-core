@@ -1,0 +1,60 @@
+* {
+    image-rendering:pixelated;
+    
+}
+
+html, body {
+    touch-action: none;
+}
+
+.canvasContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent {
+    position: relative;
+
+    .action {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        z-index: 11;
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        button {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 4px;
+        }
+    }
+}
+
+
+.canvas_el {
+    aspect-ratio: 1/1;
+    // border: 1px solid red;
+    overflow: auto;
+    position: relative; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+
+    .canvas_action {
+        transition: all .3s ease;
+    }
+
+    canvas {     
+        z-index: 10;
+        outline: 1px solid #ece6ac;
+    }   
+}
+

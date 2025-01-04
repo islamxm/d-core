@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  
+  .sidebar {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 100;
+  }
+
+  .content {
+    width: 100%;
+    // flex: 0 0 100%;
+    padding: 20px;
+    padding-top: 100px;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+}

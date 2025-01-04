@@ -1,0 +1,127 @@
+.wrapper {
+  background-color: unset;
+  border: none;
+  transition: all .1s ease;
+  outline: none;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid transparent;
+
+  .ex, .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  .ex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ex.before {
+    margin-right: 10px;
+  }
+  .ex.after {
+    margin-left: 10px;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    opacity: .85;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+  &:focus {
+    
+  }
+  &:disabled {
+    pointer-events: none;
+    touch-action: none;
+    user-select: none;
+    filter: grayscale(.5);
+    opacity: .5;
+  }
+}
+
+.wrapper.icon {
+  padding: 0;
+}
+
+.wrapper.round {
+  border-radius: 100%;
+}
+
+.wrapper.fill {
+  width: 100%;
+}
+
+.wrapper.filled.default {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  .ex, .main {
+    color: #fff !important;
+  }
+}
+.wrapper.outlined.default {
+  background-color: none;
+  border-color: var(--accent);
+  .ex, .main {
+    color: var(--accent);
+  }
+}
+
+.wrapper.filled.danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+  .ex, .main {
+    color: #fff; 
+  }
+}
+.wrapper.outlined.danger {
+  background-color: none;
+  border-color: var(--danger);
+  .ex, .main {
+    color: var(--danger);
+  }
+}
+
+
+.wrapper.filled.info {
+  background-color: var(--info);
+  border-color: var(--info);
+  .ex, .main {
+    color: #fff; 
+  }
+}
+
+.wrapper.outlined.info {
+  background-color: none;
+  border-color: var(--info);
+  .ex, .main {
+    color: var(--info);
+  }
+}
+.wrapper.filled.success {
+  background-color: var(--success);
+  border-color: var(--success);
+  .ex, .main {
+    color: #fff; 
+  }
+}
+
+.wrapper.outlined.success {
+  background-color: none;
+  border-color: var(--success);
+  .ex, .main {
+    color: var(--success);
+  }
+}

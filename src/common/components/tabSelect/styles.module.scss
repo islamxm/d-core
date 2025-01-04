@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px 2px rgba(#4c4c7c, .1);
+
+  .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: all .2s ease;
+    width: 0;
+    transform: translateX(0);
+    background-color: var(--accent);
+    border-radius: 8px;
+  }
+
+  .list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      // border: 1px solid black;
+      transition: all .2s ease;
+      cursor: pointer;
+
+    }
+
+    .tab.active {
+      color: #fff;
+    }
+  }
+}

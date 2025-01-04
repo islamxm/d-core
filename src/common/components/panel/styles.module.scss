@@ -1,0 +1,23 @@
+.wrapper {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 2px rgba(#4c4c7c, .1);
+  padding: 10px;
+  position: relative;
+  
+  .title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .action {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 10;
+    
+  }
+}

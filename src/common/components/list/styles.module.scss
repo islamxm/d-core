@@ -1,0 +1,19 @@
+.wrapper {
+  
+  .action {
+    display: flex;
+
+    .action_main {
+      flex: 1 0 auto;  
+    }
+
+    .action_viewType {
+      flex: 0 0 auto;
+    }
+
+  }
+
+  .body {
+
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  
+  .container {
+    background-color: #ccc;
+    max-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    overflow: auto;
+    overflow-x: auto;
+    padding: 40px 30px;
+
+    .paper {  
+      box-shadow: 0 0 10px 10px rgba(rgb(70, 70, 71), .3);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+  }
+}
